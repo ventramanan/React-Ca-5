@@ -49,7 +49,7 @@ function Welcome() {
       <div className=' grid grid-rows-1 gap-y-4 relative left-4  sm:flex justify-center justify-evenly  mt-24 '>
         <a href="https://aspiringyouths.com/general-knowledge/books-by-apj-abdul-kalam/" target='_blank'><img className='w-80 h-50 hover:scale-105' src={img} alt="" /></a>
         <a href="https://fable.co/folio/sundar-pichais-favorite-books-by-sundar-pichai" target='_blank'> <img className='w-80 h-50 hover:scale-105 'src={im} alt="" /></a>
-        <a href="https://www.gatesnotes.com/Books" target='_blank'><img className='w-80 h-50 hover:scale-105' src={i} alt="" /></a>
+        <a href="https://www.gatesnotes.com/Books" target='_blank'><img className='w-80 h-64 hover:scale-105' src={i} alt="" /></a>
       </div>
       <div className='flex justify-center mt-14'>
         <button className='bg-black text-white w-20 rounded-md p-2  shadow-zinc-900  shadow-2xl drop-shadow-2xl  '><Link to="/main">Search</Link></button>
