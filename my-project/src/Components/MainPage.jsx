@@ -88,7 +88,7 @@ function MainPage() {
               </div>
               <h4 className="text-white">Ratings🌟: {book.averageRating ? <span>{book.averageRating}/5</span> : "No Rating"}</h4>
               <p className="text-white text-center ml-2 mr-3 px-4 py-2 transition-transform transform focus:outline-none hover:scale-110 bg-green-500  w-16 mt-5 rounded-md">
-                <a href="https://www.readanybook.com/search?q=linux%20the%20commoand%20line">Free</a>
+                <a href="https://www.readanybook.com/search?q=linux%20the%20commoand%20line" target='_blank'>Free</a>
               </p>
 
               <Modal 

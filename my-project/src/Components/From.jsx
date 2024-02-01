@@ -120,7 +120,6 @@ function From() {
             <input
               id="password"
               className="input-field rounded-md p-2 border border-gray-300 w-full"
-              placeholder="Enter your password"
               type="password"
               value={pass}
               onChange={hand}

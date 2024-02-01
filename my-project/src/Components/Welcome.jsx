@@ -5,7 +5,7 @@ import im from "./../assets/Screenshot 2024-01-31 142943.png";
 import i from "./../assets/Screenshot 2024-01-31 143203.png";
 import { Link } from 'react-router-dom';
 
-
+// this is the welcome page imports are present
 function Welcome() {
     const[show,setContant]=useState(false)
     const handle=()=>{
@@ -15,6 +15,7 @@ function Welcome() {
     const handles=()=>{
         setAbout(!about);
     }
+//this part is for  returning  the images and and other kind of stuffs
   return (
     <div>
       <div className="bg-gray-800 h-14 flex items-center justify-end justify-between  shadow-2xl shadow-slate-700 drop-shadow-lg">
@@ -46,9 +47,9 @@ function Welcome() {
       <h3 className='text-white font-semibold text-center mt-10 hover:scale-150'>Don't stop reading, let the adventure continue on every page</h3>
 
       <div className=' grid grid-rows-1 gap-y-4 relative left-4  sm:flex justify-center justify-evenly  mt-24 '>
-        <img className='w-80 h-50' src={img} alt="" />
-        <img className='w-80 h-50'  src={im} alt="" />
-        <img className='w-80 h-50 ' src={i} alt="" />
+        <a href="https://aspiringyouths.com/general-knowledge/books-by-apj-abdul-kalam/" target='_blank'><img className='w-80 h-50 hover:scale-105' src={img} alt="" /></a>
+        <a href="https://fable.co/folio/sundar-pichais-favorite-books-by-sundar-pichai" target='_blank'> <img className='w-80 h-50 hover:scale-105 'src={im} alt="" /></a>
+        <a href="https://www.gatesnotes.com/Books" target='_blank'><img className='w-80 h-50 hover:scale-105' src={i} alt="" /></a>
       </div>
       <div className='flex justify-center mt-14'>
         <button className='bg-black text-white w-20 rounded-md p-2  shadow-zinc-900  shadow-2xl drop-shadow-2xl  '><Link to="/main">Search</Link></button>
