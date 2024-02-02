@@ -79,11 +79,11 @@ function From() {
         <img className="rounded-md w-10 h-10 ml-5" src={image} alt="" />
         <h1 className="text-xl sm:text-2xl text-white mx-4">Books bring magic</h1>
         <div className="flex mr-5">
-          <Link to="/main">
+{/*           <Link to="/main">
             <button className="ml-2 text-white px-4 py-2 transition-transform transform focus:outline-none hover:scale-110 border-2 border-amber-100">
               Home
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
       {/* this is the part where I created my forms */}
