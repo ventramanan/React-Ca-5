@@ -21,7 +21,7 @@ function From() {
   const [repeatPasswordError, setRepeatPasswordError] = useState(' ');
 // this function is for manging the validation part of the form
   const validation = () => {
-    const firstPattern = /[a-zA-Z0-9!@#$%&*]{4,}$/;
+    const firstPattern = /[a-zA-Z0-9!@#$%&*]{3,}$/;
     const emailRegex = /[a-zA-Z0-9!@#$%]+@[a-zA-Z0-9]{5,}$/;
     const passwordPattern = /^(?=.*[a-zA-Z0-9])(?=.*[!@#$%&*]).{10,}$/;
 
@@ -31,7 +31,7 @@ function From() {
     setRepeatPasswordError('');
 
     if (!firstPattern.test(username)) {
-      setUsernameError('Should be greater than 30 and less than 10');
+      setUsernameError('Should be greater than 3 and lesser than 30 letters');
       return;
     }
 
