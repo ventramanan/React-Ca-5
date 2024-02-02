@@ -1,4 +1,4 @@
-//This import part of the forms
+//This is the import part of the forms
 import React from 'react';
 import { useState } from 'react';
 import { useRecoilState } from 'recoil';
