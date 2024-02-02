@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Modal from 'react-modal';
 import ass from './../assets/unnamed.png';
-
+// This is main page state management part
 function MainPage() {
   const [data, setData] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
@@ -11,7 +11,7 @@ function MainPage() {
   const [filteredBooks, setFilteredBooks] = useState([]);
 
   Modal.setAppElement('#root');
-
+// I have used Axios to fetch API
   useEffect(() => {
     axios
       .get(`https://reactnd-books-api.udacity.com/books`, {
@@ -25,7 +25,7 @@ function MainPage() {
         console.error(err);
       });
   }, []);
-
+// This function is for handling the search
   const handleSearch = (searchTerm) => {
     const lowerCaseTerm = searchTerm.toLowerCase();
     const filteredBooks = data.filter((book) =>
@@ -45,11 +45,13 @@ function MainPage() {
 
   return (
     <div>
+      //This part is for nav bar
       <div className="bg-gray-800 h-14 flex items-center justify-end justify-between shadow-2xl shadow-slate-700 drop-shadow-lg">
         <Link to="/">
           <img className="rounded-md w-10 h-18 mb-4 ml-3 mt-5" src={ass} alt="" />
         </Link>
         <h1 className="hidden sm:block text-xl hover:scale-95 text-white">Books bring magic</h1>
+        //Here only I have created the functional components of main page
         <input
           className="w-20 sm:w-40 rounded-md shadow-2xl shadow-white drop-shadow-lg"
           value={search}
